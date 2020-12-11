@@ -1,0 +1,73 @@
+/*450px*/
+
+@media screen and (min-width: 450px) {
+  /*disposition de la grille*/
+
+  .wrapper {
+    grid-template-columns: 100px 1.2fr 1.2fr 0.8fr;
+    grid-template-rows: 80px 300px 400px 550px;
+  }
+
+  .presentation {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+
+  .presentation-image {
+    grid-row: 3/4;
+    grid-column: 3/-1;
+  }
+
+  .experiences {
+    grid-row: 4/5;
+    grid-column: 2/-1;
+  }
+
+  .experiences-image {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+
+  /*presantation image*/
+
+  .presentation-image img {
+    width: 65%;
+    height: 45%;
+
+    object-fit: cover;
+
+    margin-top: 130px;
+    margin-left: 70px;
+
+
+  }
+  .presentation-image {
+    margin-right: 0;
+  }
+
+  .presentation h2 {
+    padding-top: 0rem;
+  }
+
+  /*experience image*/
+
+  .experiences-image img {
+
+    width: 80%;
+    height: 40%;
+
+    object-fit: cover;
+
+    margin-top: 150px;
+    padding-right: 10px;
+  }
+  .experiences-image {
+    margin-right: 0;
+
+  }
+
+  .experiences span {
+    padding-left: 40px;
+  }
+
+}

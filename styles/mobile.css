@@ -3,7 +3,8 @@
 blue clair: #00abc7
 blue fonce: #1d5dd8
 violet: #8856d9
-*/
+rose clair #f87e97
+rtose foncé #fc4772*/
 
 * {
   padding: 0;
@@ -24,7 +25,7 @@ li {
   list-style: none;
 }
 
-@media screen and (min-width: 260px) {
+@media screen and (min-width: 275px) {
   body {
     color: white;
     background-image: linear-gradient(
@@ -38,10 +39,9 @@ li {
       #008cf6,
       #00adff,
       #00c9ff,
-      #00e3fb,
       #00adff,
-      #207dee,
-      #356de4,
+      #6b59da,
+      #8856d9,
       #8856d9
     );
     background-repeat: no-repeat;
@@ -60,12 +60,14 @@ li {
     margin: 30px auto 30px auto;
 
     display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 100px 170px 500px 100%;
+    grid-template-columns: 100px 1fr 1.5fr;
+    grid-template-rows: 80px 285px 450px 600px;
 
     background-color: rgba(255, 255, 255, 0.2);
 
     box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+
+
   }
 
   /*disposition de la grille*/
@@ -96,7 +98,7 @@ li {
   /*menu burger*/
 
   .burger {
-    background-color: #8856d9;
+    background-color: #f87e97;
 
     width: 40px;
     height: 40px;
@@ -170,16 +172,25 @@ li {
     background-image: url("../images/photo_profil.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: 10px;
+    background-position-x: 15px;
+    background-position-y: 15px;
 
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 
     border-radius: 50%;
 
-    box-shadow: 0 0 10px #8856d9, 0 0 40px #1d5dd8, 0 0 80px #00abc7;
+    box-shadow: 0 0 10px #8856d9, 0 0 40px #f87e97, 0 0 80px #00abc7;
 
     margin: auto;
+  }
+
+  /*Accueil*/
+
+  .accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .accueil .card {
@@ -191,16 +202,26 @@ li {
     border-radius: 10px;
 
     padding: 15px;
+    margin-top: 10px;
 
-    background-image: linear-gradient(135deg, #06d6a0 10%, #0e5cad 100%);
+    background-image: linear-gradient(135deg,#8856d9 10%, #0e5cad 100%);
 
-    position: absolute;
-    top: 25%;
-    left: 18%;
+    object-fit: contain;
 
     opacity: 0.9;
 
     animation: card 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+    z-index: 3;
+  }
+
+  .accueil h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .accueil p {
+    font-size: 2rem;
   }
 
   /*animation entrer card*/
@@ -212,7 +233,7 @@ li {
 
     100% {
       transform: translateX(0);
-      opacity: 1;
+      opacity: 0.9;
     }
   }
   /*section presentation*/
@@ -226,13 +247,25 @@ li {
 
     width: 100%;
 
-    height: 500px;
+
   }
 
-  .presentation h2 {
-    font-size: 20px;
+  .presentation {
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: 20px auto 30px auto;
 
-    padding-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  }
+
+
+  .presentation h2 {
+    font-size: 2.5rem;
+
+    padding-top: 1rem;
     text-align: center;
   }
 
@@ -240,11 +273,11 @@ li {
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: 20px;
+
   }
 
   .presentation p {
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: justify;
 
     padding: 10px;
@@ -252,20 +285,16 @@ li {
 
   .presentation .icon {
     text-align: center;
-    font-size: 20px;
+  }
+
+  .presentation .icon i {
+    font-size: 22px;
     padding-right: 10px;
   }
 
-  .presentation {
-    border-radius: 10px;
-    width: 90%;
-    height: 90%;
-    margin: 30px auto 30px auto;
 
-    background-color: rgba(255, 255, 255, 0.1);
+  /*experience*/
 
-    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
-  }
   .experiences {
     border-radius: 10px;
     width: 90%;
@@ -277,44 +306,27 @@ li {
     box-shadow: 1px 1px 1px white, -1px -1px 1px white;
   }
 
-  .sites {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
+  .experiences h2 {
+    font-size: 2.5rem;
+
+    padding-top: 1rem;
+    text-align: center;
+
   }
-  .lien {
-      height: 20vh;
-      width: 80vw;
-    }
-    .site-html {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .site-studi {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .site-quizz {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .site-films {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .site-meteo {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .site-react {
-        background-image: url("../images/html.png");
-        background-repeat: no-repeat;
-        background-size: contain;
+
+  .experiences p {
+    font-size: 1.2rem;
+    text-align: justify;
+
+    padding: 10px;
   }
+
+  .experiences h3{
+    font-size: 1.3rem;
+    text-align: justify;
+
+    padding: 10px;
+  }
+
+
 }

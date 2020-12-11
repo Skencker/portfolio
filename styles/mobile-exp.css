@@ -1,0 +1,233 @@
+/*color*/
+/* 
+blue clair: #00abc7
+blue fonce: #1d5dd8
+violet: #8856d9
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 275px) {
+  body {
+    color: white;
+    background-image: linear-gradient(
+      to right top,
+      #7a58da,
+      #6b59da,
+      #5a5bda,
+      #465cd9,
+      #356de4,
+      #207dee,
+      #008cf6,
+      #00adff,
+      #00c9ff,
+      #00adff,
+      #6b59da,
+      #8856d9,
+      #8856d9
+    );
+    background-repeat: no-repeat;
+
+    font-family: "Baloo Tamma 2", cursive;
+    line-height: 1.6;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: 30px auto 30px auto;
+
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 80px 1600px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  }
+
+  /*disposition de la grille*/
+
+  .burger {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  nav {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  .experiences {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+
+  /*menu burger*/
+
+  .burger {
+    background-color: #8856d9;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 10px;
+
+    margin-top: 25px;
+    margin-left: 25px;
+
+    filter: none;
+
+    cursor: pointer;
+
+    z-index: 200;
+
+    opacity: 1;
+  }
+
+  .trait {
+    background-color: white;
+
+    height: 2px;
+    width: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 17px;
+
+    text-align: center;
+    width: 100%;
+    height: 0px;
+
+    background-color: rgba(15, 91, 94, 0.4);
+
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+
+    z-index: 2;
+  }
+
+  nav ul {
+    padding-top: 80px;
+  }
+
+  nav ul li {
+    padding-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  /*au click du burger*/
+
+  .transition {
+    transition: all 1.5s;
+    opacity: 1;
+    height: 200px;
+  }
+
+
+  /*experience*/
+
+  .experiences {
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: 30px auto 30px auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  }
+
+  .experiences h2 {
+    font-size: 20px;
+
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .sites {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .lien  {
+    margin: 10px;
+  }
+
+  .site-html img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+  .site-studi img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+  .site-quizz img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+  .site-films img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+  .site-meteo img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+  .site-react img {
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .lien i {
+    font-size: 25px;
+    padding-right: 10px;
+  }
+}
