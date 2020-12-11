@@ -61,7 +61,7 @@ li {
 
     display: grid;
     grid-template-columns: 100px 1fr 1.5fr;
-    grid-template-rows: 80px 285px 400px 600px;
+    grid-template-rows: 80px 285px 500px 650px;
 
     background-color: rgba(255, 255, 255, 0.2);
 
@@ -256,6 +256,7 @@ li {
     justify-content: center;
 
     width: 100%;
+
   }
 
   .presentation {
@@ -267,22 +268,24 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
 
     box-shadow: 1px 1px 1px white, -1px -1px 1px white;
-  }
 
+    z-index: 100;
+  }
+  
   .presentation h2 {
     font-size: 2.5rem;
-
+    
     padding-top: 1rem;
     text-align: center;
   }
-
+  
   .text-presentation {
     display: flex;
     flex-wrap: wrap;
   }
-
+  
   .presentation p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
 
     padding: 10px;
@@ -319,6 +322,8 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
 
     box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+
+    z-index: 100;
   }
 
   .experiences h2 {
@@ -329,7 +334,7 @@ li {
   }
 
   .experiences p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
 
     padding: 10px;
