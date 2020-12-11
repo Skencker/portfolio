@@ -1,0 +1,99 @@
+/*ipad 768px*/
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: 30px auto 30px auto;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 1fr;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  }
+
+  .experiences {
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    height: 80%;
+  }
+  .experiences h2 {
+    font-size: 40px;
+    
+}
+
+  .sites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 250px);
+    gap: 20px;
+  }
+}
+
+/*ipad 900px*/
+
+@media screen and (min-width: 900px) {
+  .wrapper {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 1fr;
+  }
+ 
+
+  .site .lien {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site .lien a {
+    text-align: center;
+    height: 100%;
+  }
+
+  .site-html img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+  .site-studi img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+  .site-quizz img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+  .site-films img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+  .site-meteo img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+  .site-react img {
+    object-fit: contain;
+
+    width: 80%;
+    height: 80%;
+  }
+
+  .lien i {
+    font-size: 25px;
+    padding-right: 10px;
+  }
+}

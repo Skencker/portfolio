@@ -1,0 +1,75 @@
+/*1000px*/
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 100px 1.2fr 1fr 2fr;
+    grid-template-rows: 80px 450px 470px 650px;
+  }
+
+  /*Accueil*/
+
+  .accueil {
+    margin-bottom: 30px;
+  }
+
+  .accueil .card {
+    width: 40%;
+    height: 50%;
+  }
+
+  .accueil h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .accueil p {
+    font-size: 3rem;
+  }
+
+  .presentation p,
+  .experiences p {
+    font-size: 1.8rem;
+  }
+  .presentation h3,
+  .experiences h3 {
+    font-size: 1.8rem;
+  }
+
+  /*nav*/
+
+  nav {
+    height: 80px;
+    opacity: 0.8;
+    background-color: #fc4772;
+    box-shadow:0px 2px 8px #fdfdfd;
+
+  }
+
+  nav ul {
+    padding: 15px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding-left: 30px;
+    padding-bottom: 0px;
+  }
+
+  .burger {
+      display: none;
+  }
+
+
+  .accueil .image-profil {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .presentation .icon i {
+      font-size: 30px;
+  }
+}
