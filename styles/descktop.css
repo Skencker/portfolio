@@ -39,9 +39,9 @@
 
   nav {
     height: 80px;
-    opacity: 0.8;
-    background-color: #fc4772;
-    box-shadow:0px 2px 8px #fdfdfd;
+    opacity: 1;
+    background-color: #fc477100;
+    
 
   }
 
