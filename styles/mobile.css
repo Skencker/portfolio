@@ -182,9 +182,9 @@ li {
   .accueil .image-profil {
     background-image: url("../images/photo_profil.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 15px;
-    background-position-y: 15px;
+    background-size: cover;
+    background-position-y: -20px;
+
 
     height: 150px;
     width: 150px;
