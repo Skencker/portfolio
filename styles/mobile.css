@@ -62,7 +62,7 @@ li {
 
     display: grid;
     grid-template-columns: 100px 1fr 1.5fr;
-    grid-template-rows: 80px 285px 700px 700px;
+    grid-template-rows: 80px 285px 550px 750px;
 
     background-color: rgba(255, 255, 255, 0.2);
 
@@ -184,8 +184,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     
-
-
     height: 150px;
     width: 150px;
 
@@ -263,7 +261,7 @@ li {
   .presentation {
     border-radius: 10px;
     width: 90%;
-    height: 80%;
+    height: 90%;
     margin: 20px auto 30px auto;
 
     background-color: rgba(255, 255, 255, 0.1);
@@ -317,7 +315,7 @@ li {
   
     border-radius: 10px;
     width: 90%;
-    height: 90%;
+    height: 95%;
     margin: 30px auto 30px auto;
 
     background-color: rgba(255, 255, 255, 0.1);
